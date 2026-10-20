@@ -119,7 +119,7 @@ public class CreateDB {
             statement.executeUpdate("insert into Pet values(80, 'Mia', 'Cat', '2024-05-30', NULL, 'Female', 'Tabby', false, 'American Shorthair')");
             statement.executeUpdate("insert into Pet values(81, 'Toby', 'Dog', '2019-11-08', '2025-05-16', 'Male', 'Tan', true, 'Cavalier King Charles Spaniel')");
             statement.executeUpdate("insert into Pet values(82, 'Sasha', 'Cat', '2020-04-17', '2025-12-25', 'Female', 'Black and White', true, 'Tuxedo')");
-
+ 
             //display the contents of the Pet table
             String sqlQuery = "SELECT * FROM Pet"; // Return all (*) rows from Pet table
             ResultSet rs = statement.executeQuery(sqlQuery);

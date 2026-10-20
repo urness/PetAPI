@@ -28,7 +28,13 @@ public class SQLiteExample3 {
         return result;
     }
 
-
+    /**
+     * Count the number of animals of a given color and type
+     * @param color a String, e.g. "Brown"
+     * @param type a String, e.g. "Dog" or "Cat"
+     * @return an integer -- the number of animals in the DB of a certain color and type
+     * @throws SQLException
+     */
     public static int countOfColorAndType(String color, String type) throws SQLException {
         // create a database connection
         Connection connection = DriverManager.getConnection("jdbc:sqlite:pets.db");

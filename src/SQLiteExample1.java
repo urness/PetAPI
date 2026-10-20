@@ -18,14 +18,10 @@ public class SQLiteExample1 {
         //loop through all of the results
         while(rs.next())
         {
-            // read the result set
             System.out.print(rs.getString("name"));
             System.out.print(" " + rs.getString("type"));
             System.out.println(" id: " + rs.getInt("id"));
         }
-        if(connection != null) {
-            connection.close();
-        }
+        connection.close();
     }
-    
 }
